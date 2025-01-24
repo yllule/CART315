@@ -2,7 +2,7 @@
 
 ## Tiny Game ~ 23/01/25 
 
-[Project for class today](Projects/chrysalis.html)
+[Project for class today](Projects/Week1/chrysalis.html)
 
 After trying out the Bitsy games that were linked in the class website, I was impressed by the tool so I wanted to give it a try for this week’s game. I came up with two core mechanics I thought would be interesting to explore.
 
