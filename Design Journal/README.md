@@ -2,6 +2,8 @@
 
 ## Tiny Game ~ 23/01/25 
 
+[Project for class today](Projects/chrysalis.html)
+
 After trying out the Bitsy games that were linked in the class website, I was impressed by the tool so I wanted to give it a try for this week’s game. I came up with two core mechanics I thought would be interesting to explore.
 
 1- Telling a story through simple repetitive motions of the avatar, sort of like [this game](https://npckc.itch.io/you-are-dough) where you simply move the dough along as it gets turned into bread and get little bits of dialogue that progress the game. I thought of telling a story by having players control the movements of the sun and moon and thus controlling the flow of time. I was also inspired by the game Faith and a personal experience of looping nightmares, and so I thought of maybe making a small pixel horror game with an unending nightmare loop. I didn’t go through with this idea in the end because of the two ideas I had, this seemed the hardest to pull off with Bitsy (especially visually as I imagined it in a similar style to that of Faith’s).
