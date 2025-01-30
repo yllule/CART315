@@ -1,5 +1,8 @@
 # Design Journal
 
+## Collision ~ 20/01/25
+In the end, this week I didn't have much time to work on a prototype, so I focused on experimenting and playing around with Unity and what we learned in class last week. I don't really have anything to show for it because I ran into issues. I wanted to try collision with the example that we coded in the Chapter 20 of IGDPAD (where we make a bunch of colorful cubes spawn over and over) but I wanted to try making it with circles instead, but I had issues recreating the spawner for some reason. What would happen was the circle would fall, but others wouldn't spawn. I probably should have just opened the book again at that chapter to review how it was done but I wanted to try it myself to see if I can remember how to do it (clearly not). I though it would have been interesting to have a bunch of circle spawn and collide with each other as they filled out a closed space (like a rectangle). Though like I said earlier, due to lack of time, in the end I mostly did some explorations and experiments within Unity. If I had more time, maybe I would have played around different shapes and spawn rates.
+
 ## Tiny Game ~ 23/01/25 
 
 [Project for class today](Projects/Week1/chrysalis.html)
