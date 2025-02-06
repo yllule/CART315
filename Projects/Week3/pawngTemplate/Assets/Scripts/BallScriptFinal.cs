@@ -14,10 +14,14 @@ public class BallScriptFinal : MonoBehaviour
     public AudioSource scoreSound, blip;
 
     public int leftPlayerScore, rightPlayerScore;
+    public int maxScore = 5;
 
 
     private int[] dirOptions = {-1, 1};
     private int   hDir, vDir;
+
+    public PaddleScript leftPaddle;
+    public PaddleScript rightPaddle;
     
     // Start is called before the first frame update
     void Start() {
@@ -76,6 +80,10 @@ public class BallScriptFinal : MonoBehaviour
         if (other.gameObject.name == "leftWall")
         {
             rightPlayerScore += 1;
+            scoreSound.Play();
+            // CheckWin();
+            leftPaddle.ShrinkPaddle(); //make other player's paddle shrink
+            rightPaddle.GrowPaddle(); //make our paddle grow
             Reset();
         }
         
@@ -83,6 +91,10 @@ public class BallScriptFinal : MonoBehaviour
         if (other.gameObject.name == "rightWall")
         {
             leftPlayerScore += 1;
+            scoreSound.Play();
+            // CheckWin();
+            rightPaddle.ShrinkPaddle(); //make other player's paddle shrink
+            leftPaddle.GrowPaddle(); //make our paddle grow
             Reset();
         }
     }
@@ -118,8 +130,16 @@ public class BallScriptFinal : MonoBehaviour
         }
         
         Debug.Log(rb.linearVelocity);
-
     }
+
+    // private void CheckWin() {
+    //     if (rightPlayerScore == maxScore) {
+    //         winText.text = "Right Player Wins!";
+    //     }
+    //     else if (leftPlayerScore == maxScore) {
+    //         winText.text = "Left Player Wins!";
+    //     }
+    // }
 
 
 }
