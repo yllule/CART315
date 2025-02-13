@@ -6,19 +6,23 @@ public class BrickLayerManager : MonoBehaviour {
     public GameObject brick;
 
     public int rows, columns;
+    public float brickWidth = 1f;
+    public float brickHeight = 0.5f;
+    public float brickSpacing = 0.1f;
+    public float offsetY = 2f;
 
-    public float brickSpacing_h;
-    public float brickSpacing_v;
-    
-    
-    // Start is called before the first frame update
     void Start() {
+        float totalWidth = columns * (brickWidth + brickSpacing) - brickSpacing;
+        float totalHeight = rows * (brickHeight + brickSpacing) - brickSpacing;
+
+        Vector2 startPos = new Vector2(-totalWidth / 2f + brickWidth / 2f, totalHeight / 2f - brickHeight / 2f + offsetY);
+
         for (int i = 0; i < columns; i++) {
             for (int j = 0; j < rows; j++) {
-                float xPos = -columns + (i * brickSpacing_h);
-                float yPos = rows - (j * brickSpacing_v);
-                Instantiate(brick, new Vector3(xPos, yPos, 0), transform.rotation);
-
+                float xPos = startPos.x + i * (brickWidth + brickSpacing);
+                float yPos = startPos.y - j * (brickHeight + brickSpacing);
+                
+                Instantiate(brick, new Vector3(xPos, yPos, 0), Quaternion.identity).transform.parent = transform;
             }
         }
     }
@@ -29,3 +33,5 @@ public class BrickLayerManager : MonoBehaviour {
         
     }
 }
+
+
