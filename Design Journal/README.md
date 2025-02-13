@@ -2,6 +2,7 @@
 
 ## Breaking Out ~ 13/02/25
 For this week, I wanted to try making a look and feel prototype. I was inspired by the work I saw from my peers last week and wanted to try having a neon retro sort of look. I looked up a tutorial on Youtube to achieve the glow and made a simple background image. The idea I had was making the bricks be squares like pixels and then for next week, adding levels where the bricks make some sort of simple pixel art. Also as I'm typing this I just had the idea to make this game about pimple popping cause the title sort of sounds like an acne breakout. That would have been funny to explore but oh well I got that idea too late. I also thought of switching the game screen to be vertical as that might put more distance between the paddle, ball and the bricks and I felt it made sense for a game that has a lot of..vertical action? I wanted to add more UI elements like finishing up the lives and scoring system that was already sort of started, adding more audio, background music and a start/game over screen, but I ran out of time. Since we have the option to build upon this prototype for next week's prototype, I'll try to get that done for next week! Overall, I like the way the game looks and it was fun experimenting with the look of the game. 
+/
 ![Game look](GIFS/breakingout.gif)
 
 ## Pawng ~ 06/02/25
