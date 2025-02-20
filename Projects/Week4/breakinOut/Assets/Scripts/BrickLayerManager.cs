@@ -6,10 +6,11 @@ public class BrickLayerManager : MonoBehaviour {
     public GameObject brick;
 
     public int rows, columns;
-    public float brickWidth = 1f;
+    public float brickWidth = 0.5f;
     public float brickHeight = 0.5f;
     public float brickSpacing = 0.1f;
-    public float offsetY = 2f;
+    private float offsetY = 2.65f;
+    // private float offsetX = 0.5f;
 
     void Start() {
         float totalWidth = columns * (brickWidth + brickSpacing) - brickSpacing;

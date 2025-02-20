@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
     public int lives;
     public int points;
-
-    public Image heartImage;
+    public GameObject gameOverScreen;
 
     public static GameManager S;
     
@@ -28,11 +27,17 @@ public class GameManager : MonoBehaviour {
 
     public void LoseLife() {
         lives -= 1;
-        // full life = 1 // 3
-        heartImage.fillAmount = (lives * .2f);
+        if (lives < 1) {
+            gameOverScreen.SetActive(true);
+        }
     }
     
     public void AddPoint(int numPoints) {
         points += numPoints;
     }
+
+    // public void RestartGame() {
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    // }
+
 }

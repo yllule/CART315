@@ -11,7 +11,7 @@ public class BreakoutBall : MonoBehaviour
     public float maxSpeed = 10f;
     public float minSpeed = 2f;
 
-    public AudioSource scoreSound, blip;
+    public AudioSource scoreSound, blip, death;
     
     
     private int[] dirOptions = {-1, 1};
@@ -26,7 +26,7 @@ public class BreakoutBall : MonoBehaviour
     }
     
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Space) && !gameRunning) StartCoroutine(Launch());
+        if (Input.GetMouseButtonDown(0) && !gameRunning) StartCoroutine(Launch());
     }
 
 
@@ -49,7 +49,7 @@ public class BreakoutBall : MonoBehaviour
     public void Reset() {
         rb.linearVelocity = Vector2.zero;
         ballSpeed = 2;
-        transform.position = new Vector2(0, -3.5f);
+        transform.position = new Vector2(0, -2.5f);
         gameRunning = false;
     }
     
@@ -79,16 +79,17 @@ public class BreakoutBall : MonoBehaviour
         // did we hit the Bottom
         if (other.gameObject.tag == "Reset")
         {
-            //GameManager.S.lives -= 1;
             GameManager.S.LoseLife();
+            death.Play();
             Reset();
         }
         
         // did we hit a Brick
         if (other.gameObject.tag == "Brick") {
             int r = Random.Range(10, 20);
-            //GameManager.S.lives -= 1;
             GameManager.S.AddPoint(r);
+            blip.pitch = 1.5f;
+            blip.Play();
             Destroy(other.gameObject);
         }
     }
