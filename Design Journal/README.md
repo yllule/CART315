@@ -10,7 +10,7 @@ I know I said last week that I'd do some color sketches to figure out the mood o
 
 Goal 1 - Making a general layout of the map
 
-![GIF](Assets/creepycozy5.gif)
+![new_layout](ASSETS/creepycozy5.gif)
 
 The first version of the map was way too big but I didn't want to completely start from scratch so I just reused the terrain I made last time and modified it to better fit my idea. I scaled it down, re-raised/lowered the terrain and changed the count of scattered trees. Then, I used the Paint Texture and Paint Details tools to make a main road by removing the grass and adding a dirt texture wherever I wanted there to be the main road. In the future, I'll switch it for a road like texture (or a plane mesh?). I used the asset pack from last time and tried creating the basic elements of my map. For the "wall" of trees, for now I just used a fence mesh that I scaled up by a lot to create a placeholder wall, but I like the feeling it creates of being closed off, so I think having a wall of trees would be nice. This is also a note to self, but there are some trees I'd like to remove in the future since they are a bit in the way, especially near where the "phone booth" is going to be. I'd also place some trees specifically in front of where the "secret path" is so it's more hidden. Otherwise, this goal was pretty straightforward and easy to achieve.
 
