@@ -1,5 +1,22 @@
 # Design Journal
 
+## Iterative Prototype 4 _ 27/03/25
+Goals for this week :
+1- Make a general layout of the map in Unity using placeholder assets
+2- Make a simple interactible/collectable object
+3- Start making 3D assets?
+
+I know I said last week that I'd do some color sketches to figure out the mood of the environment, but after going back into my Unity file I kind of like what I've got going on already. I may play around with different skyboxes but that will come later.
+
+Goal 1 - Making a general layout of the map
+
+![GIF](Assets/creepycozy5.gif)
+
+The first version of the map was way too big but I didn't want to completely start from scratch so I just reused the terrain I made last time and modified it to better fit my idea. I scaled it down, re-raised/lowered the terrain and changed the count of scattered trees. Then, I used the Paint Texture and Paint Details tools to make a main road by removing the grass and adding a dirt texture wherever I wanted there to be the main road. In the future, I'll switch it for a road like texture (or a plane mesh?). I used the asset pack from last time and tried creating the basic elements of my map. For the "wall" of trees, for now I just used a fence mesh that I scaled up by a lot to create a placeholder wall, but I like the feeling it creates of being closed off, so I think having a wall of trees would be nice. This is also a note to self, but there are some trees I'd like to remove in the future since they are a bit in the way, especially near where the "phone booth" is going to be. I'd also place some trees specifically in front of where the "secret path" is so it's more hidden. Otherwise, this goal was pretty straightforward and easy to achieve.
+
+Goal 2 - Simple collectable item
+I want players to be able to collect a key that they could use to unlock an area, after solving a puzzle. So I'll need a system where players can collect items. The item doesn't necessarily have to appear in their hands, but it could instead just be shown in the UI like my earlier sketches for this project. You'd get a text prompt to let you know you could use the key to unlock the area, and the player would press a button to make that happen.
+
 ## Iterative Prototype 3 ~ 20/03/25
 Goals for this week :
 - Get a clearer idea of the scene I want to create (though sketches)
