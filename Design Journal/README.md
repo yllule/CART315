@@ -1,6 +1,6 @@
 # Design Journal
 
-## Iterative Prototype 4 _ 27/03/25
+## Iterative Prototype 4 ~ 27/03/25
 Goals for this week :
 1- Make a general layout of the map in Unity using placeholder assets
 2- Make a simple interactable/collectable object
