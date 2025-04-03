@@ -1,5 +1,32 @@
 # Design Journal
 
+## Iterative Prototype 5 ~ 03/03/25
+Goals for this week:
+1- Finally manage to make the simple interaction system
+2- Make some assets of my own and start adding them to the project
+3- Improve some of the visuals (testing out pixel shader, changing the skybox)
+
+![vid](ASSETS/cc6.gif)
+
+Goal 1
+First thing I did for this week's prototype was finish the simple interaction system I tried making last week using the other video tutorial I found. Although the video was going super quickly with lots of information, I did manage to achieve this goal. Interactable items are attached with a script that describes what happens once they're interacted with (for now they get destroyed) and that contains the "pick up" message that appears when the player gets close to an interactable item. There is another script attached to the player capsule that makes it so that the "pick up" message only displays once the player comes at a certain distance to the object and is directly looking at it, which is done thanks to a ray. For now, the object gets destroyed when the player presses E on it, but for next week I'd like to have some form of inventory system where there would be an icon of the object shown at the bottom right once its picked up.
+
+![assets](ASSETS/c.png)
+![trees](ASSETS/trees.png)
+
+Goal 2
+I tried not spending too much time on the assets and just making something quick, but it was surprisingly harder than it seemed. The style is still very low poly and simple though. There are a few assets I have left to do that I left for later like the monster, while other assets that are missing because I'll just use something from the asset store (like the bus, or a road texture). For importing my assets into Unity, I followed a tutorial to do this just to make sure I'm doing everything correctly, and while I was attempting to import a single asset into my project, for some reason all my assets were already included...which I THINK is ok? Idk I don't see a problem with it but it certainly wasn't what I was intending to do. The only problem I've noticed is that some of the materials or meshes look different in Unity than in Blender for some reason. I've attached some screenshots below, but other examples are my bus sign not having the sign part, it's just a pole in the ground in Unity...my bus stop was also missing a few faces. I'm not sure if I exported them from Blender incorrectly, but frankly I am so tired right now it is 4am and don't feel like spending forever on this so I'll likely do it tomorrow evening during class time...maybe.
+
+![bruh](ASSETS/1.png)
+![bruh2](ASSETS/2.png)
+
+Goal 3
+Like I said I stopped somewhere in goal 2, but I did look into pixel shader tutorials and found some that seemed interesting. I'm not yet sure if I'll commit to that look yet, and I just wanted to experiment. For the skybox, it is definitely a change I'm going to make so I can switch the scene to a night scene, but I'll do that for next week...
+
+So it seems like there's a lot to do for next week. By order of priority, I should make the inventory system first, then finish adding all the assets in the scene (and at least changing the skybox while I'm at it). Next, I'll make my puzzle solvable by being able to use the ladder to get the key and then the key to unlock the gate to the payphone. After that, I can maybe focus on adding in the creep elements by importing my monster. I don't think I'll include any animations, just to make this goal more achievable within the time left. However, I was thinking of ways to still have it be scary with minimal effort and thought about having a horde of the monsters closing in on you (maybe it would be like...a wall with a flat image texture of the monsters) and forcing you to go down the hidden path. While I consider it to be the most low priority goal right now, I do still think it is important (and mostly nice) to fix the mesh issues I have with some of my assets. Though because I want to focus on having something playable, I'll focus on the other goals first and maybe do this if I have time. And finally if I really have the time to achieve all of the prior goals I can play around with a pixel shader.
+
+Since I'm slowly starting to replace the placeholder assets and made the simple interaction system, I'm starting to move more toward a mid fidelity prototype, but it is still pretty bare bones. I've done some implementation with the interaction system and assets, but also a bit of look and feeL for the assets I created.
+
 ## Iterative Prototype 4 ~ 27/03/25
 Goals for this week :
 1- Make a general layout of the map in Unity using placeholder assets
