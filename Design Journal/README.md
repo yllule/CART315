@@ -17,8 +17,8 @@ First thing I did for this week's prototype was finish the simple interaction sy
 Goal 2
 I tried not spending too much time on the assets and just making something quick, but it was surprisingly harder than it seemed. The style is still very low poly and simple though. There are a few assets I have left to do that I left for later like the monster, while other assets that are missing because I'll just use something from the asset store (like the bus, or a road texture). For importing my assets into Unity, I followed a tutorial to do this just to make sure I'm doing everything correctly, and while I was attempting to import a single asset into my project, for some reason all my assets were already included...which I THINK is ok? Idk I don't see a problem with it but it certainly wasn't what I was intending to do. The only problem I've noticed is that some of the materials or meshes look different in Unity than in Blender for some reason. I've attached some screenshots below, but other examples are my bus sign not having the sign part, it's just a pole in the ground in Unity...my bus stop was also missing a few faces. I'm not sure if I exported them from Blender incorrectly, but frankly I am so tired right now it is 4am and don't feel like spending forever on this so I'll likely do it tomorrow evening during class time...maybe.
 
-![bruh](ASSETS/1.png)
-![bruh2](ASSETS/2.png)
+![bruh](ASSETS/a.png)
+![bruh2](ASSETS/b.png)
 
 Goal 3
 Like I said I stopped somewhere in goal 2, but I did look into pixel shader tutorials and found some that seemed interesting. I'm not yet sure if I'll commit to that look yet, and I just wanted to experiment. For the skybox, it is definitely a change I'm going to make so I can switch the scene to a night scene, but I'll do that for next week...
