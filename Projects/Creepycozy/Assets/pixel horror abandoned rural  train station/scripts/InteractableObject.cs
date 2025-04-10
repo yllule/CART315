@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour, IInteractable
 {
+    public InventoryItem itemData;
+
     public void Interact()
     {
-        // Debug.Log("Item picked up!");
-        Destroy(gameObject);  //destroys the object on interaction
+        InventorySystem.Instance.PickUpItem(itemData);
+        Destroy(gameObject);
     }
 
     public string GetDescription()
