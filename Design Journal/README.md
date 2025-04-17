@@ -1,5 +1,35 @@
 # Design Journal
 
+## Iterative Prototype 6 ~ 17/04/25
+Goals for the final iteration:
+1- Create the simple inventory system and make it possible to solve the first puzzle
+2- Re-export Blender assets to fix issue from last week
+3- Improve the visuals of the environment (trees, tree walls, "monster")
+4- Create some creep factor (with the monster)
+5- Add pixel shader?
+
+![gif1](ASSETS/CC1.gif)
+
+Goal 1
+I completed this goal last week thanks to a tutorial I found online but I forgot to save it and now I can't find it anymore!! But thankfully it wasn't as hard to do as it seemed and I'm really happy with how it looks and that I managed to create what I had been imagining for the inventory system which is having the held item shown as an icon on the main screen. I could have worked on this some more to make it possible to place items in the world (which would have made it possible to complete my initial version of this puzzle because you had to find a ladder and place it so you can climb it) but since there wasn't much time left and I had much I wanted to do, I decided to simplify the first puzzle to just finding the key and using it to open the locked fence. It does unfortunately make the game duller and focus more on exploration instead of solving an actual puzzle... Also I could have had something happen when you reach the telephone booth as a reward but again due to lack of time I kept it as is. So once you solve the puzzle nothing really happens...
+
+![gif2](ASSETS/CC2.gif)
+
+Goal 2
+I know I said last time that I would not focus on fixing the trees I made due to lack of time, but at least for the spider web trees I thought it was such a shame that they look weird in Unity, since I wanted to have the look of the "spider web" leafs covering the sky and creating that sort of environment. After having similar issues when exporting Blender assets to UE5 for another project and figuring out the issue, I thought maybe the same solution would work for this project and it did! I just had to recalculate the normals and re-export the model and everything was as it should be, so I ended up creating the little spider web forest area into the project and hid the key inside that area behind a tree.
+
+Goal 3
+One of my subgoals here was to replace the trees I used in the Unity asset pack with the trees I had made myself. It was quite simple to do in theory (or so I thought) since I just had to use Unity's terrain paint trees and mass place trees tool to replace the placeholder trees. When adding the trees to my "brush" though, they seem to be sideways for some reason, which is strange because when I pull in the raw model into my environment it is in the right orientation. And I think because they're sideways, even if I try to place them on my scene with the brush tool, nothing seems to happen. Because of that I unfortunately gave up on the idea of replacing the placeholder trees by the trees I made...and since that was the case I had to change the asset I made for the "tree wall" since I had been using a image texture for it that I made with my tree models. I had to change it so that it is a wall of the placeholder trees from my project, so I took a screenshot of some trees in my scene and used that as a material on a 3D model of a wall and imported it into Unity to replace the huge fence assets I had been using as a placeholder for the walls. One of my original ideas for the wall was not just to limit the player in where they can go and keep the hidden path...hidden, but also because I thought it would be cool to have the image texture randomly change into something creepy like eyes staring at you. Once again, this is something I didn't have the time to complete but really wish I could do. Something small I changed as well was adding a road and cobblestone material in some parts of the road (that I got from the asset store) and make the fog more intense and I feel it adds more mystery.
+
+Goal 4
+I had the idea last time to have like a wall of monsters coming towards you as you approach them to hopefully still scare the player into running back and finding the hidden path. Though in the end I didn't have time to do something simple like that either... I wanted to make my own monster model but ended up using one from the asset pack I had and made a static monster "wall" with it. I guess it sort of is creepy...? But everything is so static.. I wish I could have added other creepy elements like sounds, it would make the world seem more alive as well.
+
+Goal 5
+This was low on my priority however I found [a very quick and easy tutorial](https://www.youtube.com/watch?v=Sru8XDwxC3I) and decided to try it out. I like the look of it with the pixel shader! I feel with that and the extra fog that it adds more mystery and confusion to the project which helps with the creepyness.
+
+Considering we agreed on me doing a vertical slice of my original idea, I'm quite disappointed with what I've managed to get done and I don't believe it to be a true vertical slice. I'd consider this final iteration to overall be a mid fidelity prototype since some of the visuals are refined but some are still placeholders, and I unfortunately had to cut out a lot from my original idea for this game. As it is, I don't know if it accomplishes the goal I had of having a game initially seeming to be a horror game and then slowly becoming a calm exploration puzzle game. I do wonder what it would have been like to try to make this game in 2D instead and if it would have been simpler for me to make it that way (also since I am more comfortable with making 2D images and I guess games too and since one struggle I had with this project was with correctly importing my Blender assets into Unity...it was kind of a headache). However, the 3D aspect of it does afford the player more exploration than if I had done it in 2D, which would have been more limiting in that aspect. Despite the overall disappointment I feel for this project, as a first 3D project in Unity (and first 3D environment) I'm decently satisfied with it (at least as an exploration of what I can do in Unity).
+
+
 ## Iterative Prototype 5 ~ 03/03/25
 Goals for this week:
 1- Finally manage to make the simple interaction system
